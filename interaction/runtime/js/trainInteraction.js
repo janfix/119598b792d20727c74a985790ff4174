@@ -86,9 +86,18 @@ define([
         getResponse: function() {
 
             var $container = $(this.dom),
-            value = $container.find('.trainansw').text();
-            value = value.slice(0, -1);
-
+                situerCocci = $container.find('.situerCocciAsw').text(),
+                refTrain = $container.find('.refTrainAsw').text(),
+                refTerre = $container.find('.refTerreAsw').text(),
+                trajectoirTerre = $container.find('.trajectoirTerreAsw').text(),
+                trajectoirTrain = $container.find('.trajectoirTrainAsw').text(),
+                value = 
+                '{"situerCocci":'+situerCocci+
+                ',"refTrain":' + refTrain +
+                ',"refTerre":' + refTerre +
+                ',"trajectoirTerre":' + trajectoirTerre +
+                ',"trajectoirTrain":' + trajectoirTrain +
+                '}';
             return { base: { string: value } };
         },
         /**

@@ -35,6 +35,13 @@
     
         </div>
     
-        <div class="trainansw">&nbsp;</div>
+        <div class="trainansw">
+            <div class="situerCocciAsw">false</div>
+            <div class="refTrainAsw">false</div>
+            <div class="refTerreAsw">false</div>
+            <div class="trajectoirTerreAsw">false</div>
+            <div class="trajectoirTrainAsw">false</div>
+
+        </div>
     </div>
 </div>

@@ -91,10 +91,7 @@ define([
 
 
         $ccbleu.click(function (event) {
-            if (answccbleue == "non") {
-                $container.find(".trainansw").append(" cocci-ok,");
-                answccbleue = "anim-ok";
-            }
+            $container.find(".refTrainAsw").html("true");
             $cocci.hide();
             $situercocci.hide();
             $vache.hide();
@@ -105,10 +102,7 @@ define([
         });
 
         $vache.click(function (event) {
-            if (answvache == "non") {
-                $container.find(".trainansw").append(" vache-ok,");
-                answvache = "anim-ok";
-            }
+            $container.find(".refTerreAsw").html("true");
             $cocci.hide();
             $situercocci.hide();
             $ccbleu.hide();
@@ -175,6 +169,7 @@ define([
         }
 
         $vtraj.click(function (event) {
+            $container.find(".trajectoirTerreAsw").html("true");
             $ptvvache.show();
             $ptvvache.animate({
                 opacity: 1
@@ -187,7 +182,7 @@ define([
         });
 
         $cctraj.click(function (event) {
-
+            $container.find(".trajectoirTrainAsw").html("true");
             $ptvcc.show();
             $bg.css("opacity", 0).css("border", "none");
             $premierplan.removeClass('premplan');
@@ -208,6 +203,7 @@ define([
         });
 
         $situercocci.click(function (event) {
+            $container.find(".situerCocciAsw").html("true");
             $cocci.toggle();
             $cocci.css("margin-top", "160px");
         });
